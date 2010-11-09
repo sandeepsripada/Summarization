@@ -35,7 +35,7 @@ public class Start
 			sd.dumpBestSummary(path);
 		}
 		long out = System.currentTimeMillis();
-		System.out.println("Start:main:: Stack decoder: " + ((out-in)/1000));
+		System.out.println("Start:main:: Time taken by Stack decoder (s): " + ((out-in)/1000));
 		
 	}
 
