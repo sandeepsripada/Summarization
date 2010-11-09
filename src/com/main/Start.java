@@ -14,6 +14,11 @@ public class Start
 	
 	public static void main(String[] args) throws Exception
 	{
+		if(args.length!=1)
+		{
+			usage();
+			System.exit(-1);
+		}
 		StopWords.initializeStopWords(STOP_WORDS_FILE_PATH);
 		
 		//Test dataset - Stack Decoder
@@ -32,6 +37,12 @@ public class Start
 		long out = System.currentTimeMillis();
 		System.out.println("Start:main:: Stack decoder: " + ((out-in)/1000));
 		
+	}
+
+	private static void usage()
+	{
+		System.out.println("Usage: java <main> <path to data>");
+		System.out.println("Note: 'data' folder contains the sample input files.");
 	}
 
 	public static List<Double> getWeights(){
