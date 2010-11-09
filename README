@@ -1,0 +1,33 @@
+Aim:
+The project takes in documents and output an extraction based summary i.e. selects sentences from the given set that satisfy the length constraint and also maximize the overall score of the summary. (Importance Score of a summary is the sum of scores of individual sentences.)
+
+Main class:
+Expects one argument - path to the directory containing the data.
+For the project, the sample data files are in the 'data' directory.
+
+Method:
+The project contains the implementation of the StackDecoder method for summary generation.
+Ref: http://stanford.edu/~ssandeep/Homepage/Resume_files/PACLIC23-521-529.pdf
+
+The current similarity scorer set is 'CosineSimilarityScorer'. This can be changed to any other scorer by implementing the SimilarityScorer interface.
+Other alternative included is JaccardSimilarityScorer.
+
+Final report of the project:
+http://stanford.edu/~ssandeep/Homepage/Courses_files/MultidocumentSummarization.pdf
+
+Output:
+The output summaries are generated in the 'summaries' folder.
+
+External sources: (files not mentioned below were all coded by me)
+Files that are not coded by me but provided as starter codes for the 'Natural Language Processing' class at Stanford:
+com.util package: 
+	Counter, CounterMap, MapFactory, PorterStemmer, PQ
+com.score.importance:
+	All the files
+com.decoding.stackdecoder:
+	SpecialPQ
+	
+Contributions:
+I have written the framework code for loading the dataset and segregating it into topics, documents, summaries and sentences, also designed the structure.
+I have also implemented the 'Stackdecoder' algorithm using the above framework.
+The common platform also made it easy for others to plugin their code and implement other methods.
