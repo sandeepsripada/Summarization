@@ -31,3 +31,6 @@ Contributions:
 I have written the framework code for loading the dataset and segregating it into topics, documents, summaries and sentences, also designed the structure.
 I have also implemented the 'Stackdecoder' algorithm using the above framework.
 The common platform also made it easy for others to plugin their code and implement other methods.
+
+NOTE:
+LSP is an external program that is not currently included. An open source alternative is to use NTLK (http://nltk.org/) tokenizer.
