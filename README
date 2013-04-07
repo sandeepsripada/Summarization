@@ -7,13 +7,13 @@ For the project, the sample data files are in the 'data' directory.
 
 Method:
 The project contains the implementation of the StackDecoder method for summary generation.
-Ref: http://stanford.edu/~ssandeep/Homepage/Resume_files/PACLIC23-521-529.pdf
+http://cs.stanford.edu/people/ssandeep/reports/PACLIC-09.pdf
 
 The current similarity scorer set is 'CosineSimilarityScorer'. This can be changed to any other scorer by implementing the SimilarityScorer interface.
 Other alternative included is JaccardSimilarityScorer.
 
 Final report of the project:
-http://stanford.edu/~ssandeep/Homepage/Courses_files/MultidocumentSummarization.pdf
+http://cs.stanford.edu/people/ssandeep/reports/CS224N.pdf
 
 Output:
 The output summaries are generated in the 'summaries' folder.
